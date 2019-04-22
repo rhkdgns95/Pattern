@@ -21,7 +21,7 @@ public class ArrayMenuIterator implements Iterator {
 
 	@Override
 	public boolean hasPrev(int position) {
-		return (items.length <= 0 || position - 1 < 0) ? false : true;
+		return items.length <= 0 || position < 0 ? false : true;
 	}
 
 	@Override

@@ -1,19 +1,19 @@
 package org.java.design_patterns.iterator;
 
 public class ArrayMenu implements Menu {
-	static final int MAX = 6;
+	static final int MAX = 3;
 	MenuItem[] items;
 	int idx;
 
 	public ArrayMenu() {
 		items = new MenuItem[MAX];
 		idx = 0;
-		addMenuItem(new MenuItem("김치볶음밥", "매운 김치가 들어감", 3.77));
-		addMenuItem(new MenuItem("야채볶음밥", "야채가 들어감", 3.77));
-		addMenuItem(new MenuItem("고기볶음밥", "돼지고기 들어감", 3.77));
-		addMenuItem(new MenuItem("카레밥", "인도카레", 3.77));
-		addMenuItem(new MenuItem("짜장밥", "중국짜장", 3.77));
-		addMenuItem(new MenuItem("짜장밥2", "중국짜장2", 3.77));
+		
+		addMenuItem(new MenuItem("복숭아 아이스티", "복숭아 향이나는 음료", 2.21));
+		addMenuItem(new MenuItem("겉절이", "배추가 들어간 반찬", 2.21));
+		addMenuItem(new MenuItem("해물 칼국수", "다양한 해산물이 들어간 메인요리", 4.33));
+		
+		
 	}
 
 	public MenuItem getArrayMenuItem(int position) {

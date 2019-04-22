@@ -15,14 +15,14 @@ public class Waitress {
 	}
 
 	public void addIterator(Iterator iterator) {
-		iterators.add(iterator);
+		this.iterators.add(iterator);
 	}
 
 	public void printMenu() {
 		int weekIdx;
 		for(int i = 0; i< 7; i++) {
 			weekIdx = i % iterators.size();
-			System.out.println(WEEK[i]);
+			System.out.println("\n"+WEEK[i]);
 			printMenu(iterators.get(weekIdx));
 		}
 //		for (int i = 0; i < iterators.size(); i++) {
@@ -37,6 +37,7 @@ public class Waitress {
 		
 		while (menuIterator.hasPrev(position)) {
 			MenuItem menu = (MenuItem) menuIterator.prev();
+			
 			System.out.println("$"+ menu.getPrice()+ "\t"+ menu.getTitle() + "("+ menu.getDescription()+ ")");
 			
 			position--;

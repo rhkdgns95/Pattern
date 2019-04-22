@@ -7,9 +7,10 @@ public class VectorMenu implements Menu{
 	
 	public VectorMenu() {
 		items = new Vector<>();
-		addMenuItem(new MenuItem("수박", "달달함", 4.33));
-		addMenuItem(new MenuItem("사과", "과즙가득", 2.21));
-		addMenuItem(new MenuItem("포도", "포도향가득", 1.71));
+		
+		addMenuItem(new MenuItem("딸기 스무디", "딸기와 얼음을 갈아만든 음료", 2.21));
+		addMenuItem(new MenuItem("계란말이", "계란이 들어간 반찬", 2.21));
+		addMenuItem(new MenuItem("김치볶음밥", "매콤한 메인요리", 4.33));
 	}
 	
 	public void addMenuItem(MenuItem item) {
